@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COVID19</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3a68a7f01f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">TRANG CHỦ</a></li>
+                        <li><a href="infor.html">THÔNG TIN</a></li>
+                        <li><a href="dec.html">KHAI BÁO Y TẾ</a></li>
+                        <li><a href="prec.html">BIỆN PHÁP PHÒNG TRÁNH</a></li>
+                        <li><a href="login.html">ĐĂNG NHẬP</a></li>
+                    </ul>
+                </div> 
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="search-box">
+                <input class="search-txt" type="text" placeholder="Tìm kiếm">
+                <a href="" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            
+            <div class="text-box">
+                <h1>COVID-19 ALERT</h1>
+                <h2>Cùng chung tay vượt qua đại dịch COVID-19</h2>
+                <p></p>
+                <a href="" class="information-button">Xem chi tiết</a>
+            </div>
+
+        </section>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
